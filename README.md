@@ -1,3 +1,5 @@
+BOOTCAMP
+
 **DAY 1:** This section helps me recall HTML and CSS, practice, refine the project, and perfect fundamental web development concepts, tags, and basic styling.
 
 **DAY 2:** I learned more about CSS, basic Bootstrap, CSS animations, and how to handle responsive websites. I also recalled and practiced my development skills. Additionally, I learned many things from my friends and shared some knowledge with them.
