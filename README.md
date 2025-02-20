@@ -1,4 +1,4 @@
-<h1>BOOTRAP</h1>
+<h1>BOOTCAMP</h1>
 
 **DAY 1:** This section helps me recall HTML and CSS, practice, refine the project, and perfect fundamental web development concepts, tags, and basic styling.
 
