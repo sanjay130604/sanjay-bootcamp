@@ -1,0 +1,57 @@
+/* CSS - menu-style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('./fruit-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.menu-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.dish {
+    font-weight: bold;
+    color: crimson;
+}
+
+@media (max-width: 768px) {
+    .menu-section {
+        width: 90%;
+    }
+}

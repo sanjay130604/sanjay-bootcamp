@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Modal</title>
+    <link rel="stylesheet" href="project4.css">
+</head>
+<body>
+    <h1>Model Popup</h1>
+    <button class="open">Open Me</button>
+
+    <div class="modal_container">
+        <div class="modal">
+            <h1>TCS Company</h1>
+            <p>Tata Consultancy Services (TCS) is an Indian multinational technology company specializing in information technology services and consulting. Headquartered in Mumbai, it is a part of the Tata Group and operates in 150 locations across 46 countries. It is the second-largest Indian company by market capitalization.</p>
+            <button class="close">Close Me</button>
+        </div>
+    </div>
+
+    <script>
+        const openBtn = document.querySelector('.open');
+        const closeBtn = document.querySelector('.close');
+        const modalContainer = document.querySelector('.modal_container');
+
+        openBtn.addEventListener('click', () => {
+            modalContainer.classList.add('show');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modalContainer.classList.remove('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="task6.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="successMessage" class="hidden">Form submitted successfully!</p>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            // Name Validation: At least 3 characters, only letters & spaces
+            if (!/^[a-zA-Z\s]{3,}$/.test(name)) {
+                alert("Name must contain only letters and be at least 3 characters long.");
+                return;
+            }
+
+            // Email Validation: Standard email format
+            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                alert("Enter a valid email address.");
+                return;
+            }
+
+            // Phone Validation: Exactly 10 digits
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Phone number must be exactly 10 digits.");
+                return;
+            }
+
+            // Password Validation: At least 8 characters, including uppercase, lowercase, number, and special character
+            if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password)) {
+                alert("Password must be at least 8 characters long and include one uppercase letter, one lowercase letter, one number, and one special character.");
+                return;
+            }
+
+            // Message Validation: At least 10 characters
+            if (message.length < 10) {
+                alert("Message must be at least 10 characters long.");
+                return;
+            }
+
+            // Show success message and reset form
+            document.getElementById("successMessage").classList.remove("hidden");
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+</body>
+</html>

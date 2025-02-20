@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Content</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <h1>SHOW / HIDE CONTENT</h1>
+
+    <div class="containerone">
+        <button id="btn">Show</button>
+    </div>
+   
+        <h1 id="h1">zoho</h1>
+        <img src="./zoho.jpg" id="zoho">
+        <p id="p">Zoho Corporation is an India multinational technology company that makes computer software and web-based business tools. It is best known for the online office suite offering Zoho Office Suite. The company was founded in 1996 in New Jersey, USA by Sridhar Vembu and Tony Thomas and has a presence in seven locations with global headquarters in Austin, USA, and corporate headquarters outside of Chennai, Tamil Nadu in Del Valle, Texas. Radha Vembu, Sridhar Vembu's sister, owns a majority stake in the company.</p>
+
+
+    <script>
+        const button = document.getElementById('btn');
+        const h1 = document.getElementById('h1');
+        const p = document.getElementById('p');
+        const zoho = document.getElementById('zoho');
+
+        button.addEventListener('click', () => {
+            if (h1.style.display === "none") {
+                h1.style.display = "block";
+                p.style.display = "block";
+                zoho.style.display = "block";
+                button.textContent = "Hide";
+            } else {
+                h1.style.display = "none";
+                p.style.display = "none";
+                zoho.style.display = "none";
+                button.textContent = "Show";
+            }
+        });
+    </script>
+</body>
+</html>

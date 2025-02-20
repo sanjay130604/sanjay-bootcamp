@@ -1,0 +1,29 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: hsl(0, 0%, 94%);
+    }
+
+    .vijay{ 
+        text-align: center;
+        background-color:hsl(0, 0%, 85%);
+    }
+
+    .vijay-about{
+        margin-top: 40px;
+        background-color:hsl(0, 0%, 85%);
+        width: 600px;
+        margin-left: 465px;
+        padding: 30px;
+    }
+
+    .vijay-about p{
+        padding-top: 15px;
+        font-style: italic;
+        font-size: 15px;
+    }

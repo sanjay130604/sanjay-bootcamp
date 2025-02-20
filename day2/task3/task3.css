@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background-color:hsl(300, 100%, 90%);
+    width: 600px;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    left: -100px;
+}
+
+.contain{
+    padding-top: 30px;
+}
+
+.contain li{
+    padding-top: 10px;
+}
+
+.spam{
+    font-weight: bold;
+    font-size: 20px;
+    color:crimson;
+}
+
+.bg{
+    margin-left: 30%;
+    margin-top: 130px;
+}
+
+body{
+    background-image: url('./fruit-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 85vw;
+    height: 85vh;
+}

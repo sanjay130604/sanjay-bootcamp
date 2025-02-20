@@ -1,0 +1,85 @@
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+    }
+
+    .open {
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        margin-top: 12px;
+    }
+
+    .open:hover {
+        background-color: #0056b3;
+    }
+
+    .modal_container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal {
+        background: white;
+        padding: 20px;
+        width: 500px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal h1 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .modal p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .close {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    .close:hover {
+        background-color: #a71d2a;
+    }
+
+    /* Show modal when class is added */
+    .modal_container.show {
+        display: flex;
+    }
