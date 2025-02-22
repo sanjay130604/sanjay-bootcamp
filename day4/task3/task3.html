@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            margin: 0;
+            flex-direction: column;
+        }
+        .slider-container {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .slider img {
+            width: 600px;
+            height: 400px;
+            display: none;
+            border-radius: 10px;
+        }
+        .slider img.active {
+            display: block;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #ff7e5f;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #feb47b;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="image1.jpg" class="active" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+    <div class="buttons">
+        <button onclick="prevSlide()">Prev</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.slider img');
+        
+        function showSlide() {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+        
+        function nextSlide() {
+            index = (index + 1) % images.length;
+            showSlide();
+        }
+        
+        function prevSlide() {
+            index = (index - 1 + images.length) % images.length;
+            showSlide();
+        }
+    </script>
+</body>
+</html>
