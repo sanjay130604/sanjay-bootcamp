@@ -1,7 +1,5 @@
-#### Overview
-This project is a **simple image slider** created using **HTML, CSS, and JavaScript**. It allows users to navigate through three images with "Prev" and "Next" buttons, ensuring only one image is visible at a time. The design includes a **modern gradient background**, smooth transitions, and interactive button effects.
+**Overview**
+This project is a simple About Me Page built using HTML and CSS. It showcases essential HTML elements like headings, paragraphs, images, and div containers while implementing CSS for styling, layout, and responsiveness.
 
-1. **Responsive & Stylish Design** – The slider is centered on the page with a **gradient background** and a rounded border for a modern look.
-2. **Easy Customization** – You can easily add more images, change styles, or enhance functionality like autoplay.
-
-
+Responsive Design – Used margins, padding, and width adjustments to create a structured and visually appealing layout.
+Color & Typography – Applied HSL for colors, customized fonts, and used borders to enhance the page aesthetics.
