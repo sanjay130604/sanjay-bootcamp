@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+div{
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+    padding: 120px;
+}
+
+body{
+    background-color: bisque;
+}
